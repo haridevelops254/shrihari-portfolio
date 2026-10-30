@@ -1,0 +1,15 @@
+CATEGORIES: dict[str, str] = {
+    "general_software": "General Software Engineering",
+    "backend": "Backend Engineering",
+    "ai_engineering": "AI Engineering",
+    "ml_engineering": "Machine Learning Engineering",
+    "data_science": "Data Science",
+    "data_analytics": "Data Analytics",
+    "business_intelligence": "Business Intelligence",
+    "computer_vision": "Computer Vision",
+    "genai_rag": "Generative AI / RAG",
+    "agentic_ai": "Agentic AI",
+    "full_stack": "Full Stack",
+    "solutions_product": "Solutions / Product Engineering",
+    "custom": "Custom category",
+}

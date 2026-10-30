@@ -1,0 +1,30 @@
+import type { Skill } from '../types';
+const S = (group: string, name: string, level: Skill['level'], evidence: string): Skill => ({ group, name, level, evidence });
+export const skills: Skill[] = [
+  S('Languages', 'Python', 'Implemented', 'All ML and backend projects'), S('Languages', 'TypeScript', 'Implemented', 'AttriShield, StudyMentor'),
+  S('Languages', 'Embedded C', 'Implemented', 'Sleep Alert'), S('Languages', 'Kotlin', 'Explored', 'MindMatrixEd internship'),
+  S('Languages', 'Java and C', 'Foundational', 'Coursework'),
+  S('ML', 'scikit-learn', 'Implemented', 'AttriShield'), S('ML', 'XGBoost', 'Implemented', 'AttriShield'), S('ML', 'SHAP', 'Implemented', 'AttriShield'),
+  S('ML', 'MLflow', 'Implemented', 'AttriShield'), S('ML', 'Calibration analysis', 'Implemented', 'AttriShield, AksharaVision'),
+  S('Vision', 'PyTorch', 'Implemented', 'AksharaVision'), S('Vision', 'CNNs', 'Implemented', 'AksharaVision'), S('Vision', 'EfficientNet', 'Experimented', 'AksharaVision'),
+  S('Vision', 'Swin Transformer', 'Experimented', 'AksharaVision'), S('Vision', 'OpenCV', 'Implemented', 'AksharaVision'), S('Vision', 'ONNX Runtime', 'Implemented', 'AksharaVision'),
+  S('Vision', 'YOLO', 'Implemented', 'Wisewit Solutions internship'), S('Vision', 'Mask2Former', 'Experimented', 'Wisewit Solutions internship'),
+  S('Vision', 'Roboflow annotation', 'Implemented', 'Wisewit Solutions internship'), S('Vision', 'SAM / DINO-assisted annotation', 'Experimented', 'Wisewit Solutions internship'),
+  S('Vision', 'Image resizing and validation metrics', 'Implemented', 'Wisewit Solutions internship'),
+  S('Tools', 'VS Code Remote / GPU server workflows', 'Implemented', 'Wisewit Solutions internship'),
+  S('GenAI / RAG', 'ChromaDB and Sentence Transformers', 'Implemented', 'CarnaticPrep'), S('GenAI / RAG', 'BM25 and weighted RRF', 'Implemented', 'CarnaticPrep'),
+  S('GenAI / RAG', 'CrossEncoder reranking', 'Implemented', 'CarnaticPrep'), S('GenAI / RAG', 'Ollama / Qwen2.5', 'Implemented', 'CarnaticPrep, StudyMentor'),
+  S('GenAI / RAG', 'RAGAS', 'Experimented', 'CarnaticPrep (in progress)'), S('GenAI / RAG', 'Google AI Studio', 'Explored', 'MindMatrixEd internship'),
+  S('Agentic AI', 'LangChain and LangGraph', 'Implemented', 'StudyMentor'), S('Agentic AI', 'Tool calling, checkpointing, bounded retries', 'Implemented', 'StudyMentor'),
+  S('Backend', 'FastAPI and Pydantic', 'Implemented', 'AttriShield, CarnaticPrep, StudyMentor'), S('Backend', 'JWT authentication', 'Implemented', 'AttriShield'),
+  S('Backend', 'pytest and GitHub Actions CI', 'Implemented', 'StudyMentor'), S('Backend', 'Railway deployment', 'Implemented', 'AttriShield'),
+  S('Frontend', 'React', 'Implemented', 'AttriShield, StudyMentor'), S('Frontend', 'Next.js 14 and Tailwind CSS', 'Implemented', 'StudyMentor'),
+  S('Frontend', 'TanStack Query and Zod', 'Implemented', 'AttriShield'), S('Frontend', 'Android Studio', 'Explored', 'MindMatrixEd internship'),
+  S('Data', 'Pandas', 'Implemented', 'Screen Supremacy'), S('Data', 'BigQuery', 'Implemented', 'Screen Supremacy'), S('Data', 'Power BI', 'Implemented', 'Screen Supremacy'),
+  S('Data', 'Excel', 'Implemented', 'Screen Supremacy'),
+  S('Databases', 'MongoDB', 'Implemented', 'AttriShield, StudyMentor'), S('Databases', 'SQL fundamentals', 'Foundational', 'Coursework (DBMS)'),
+  S('Databases', 'MySQL and PostgreSQL', 'Explored', 'Concepts and exploration; no production claim'),
+  S('Databases', 'Redis', 'Future direction', 'Learning'), S('Backend', 'Spring Boot', 'Future direction', 'Learning'),
+  S('Embedded', 'Arduino and IR sensors', 'Implemented', 'Sleep Alert'),
+];
+export const skillLevels = ['Implemented', 'Experimented', 'Explored', 'Foundational', 'Future direction'] as const;
