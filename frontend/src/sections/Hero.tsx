@@ -1,4 +1,3 @@
-
 import { ArrowRight, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import { profile } from "../data/profile";
@@ -14,7 +13,7 @@ export function Hero() {
         />
 
         <p className="eyebrow mono">
-          SOFTWARE ENGINEERING · APPLIED AI · DATA SCIENCE
+          AI / ML ENGINEERING · APPLIED AI · DEEP LEARNING
         </p>
 
         <h1 id="hero-h" className="display hero-title">
@@ -22,11 +21,13 @@ export function Hero() {
         </h1>
 
         <p className="hero-summary">
-          I build practical software and AI systems—from data preparation and
-          model evaluation to APIs, product interfaces, and reliable workflows.
-          I enjoy turning complex ideas into useful, understandable experiences,
-          while staying curious, collaborative, and honest about what is tested
-          and what is still evolving.
+          I focus on building practical AI and machine learning solutions,
+          from data preparation and model development to experimentation,
+          evaluation, and deployment. My interests include applied machine
+          learning, deep learning, computer vision, and generative AI.
+          I use data science to make informed modelling decisions and
+          software engineering to turn intelligent models into useful,
+          reliable applications.
         </p>
 
         <p className="mono muted identity">
@@ -35,11 +36,11 @@ export function Hero() {
 
         <div className="row wrap gap hero-actions">
           <Link className="btn btn-primary" to="/#projects">
-            Explore projects <ArrowRight size={16} aria-hidden />
+            Explore AI/ML projects <ArrowRight size={16} aria-hidden />
           </Link>
 
           <Link className="btn btn-secondary" to="/#resumes">
-            View role-specific resumes
+            View AI/ML resume
           </Link>
 
           <Link className="btn btn-ghost" to="/#contact">
